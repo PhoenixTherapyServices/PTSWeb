@@ -36,7 +36,8 @@
     <li><a href="about.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">About Us</a></li>
     <li><a href="personnel.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Our Team</a></li>
     <li><a href="services.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Services</a></li>
-    <li><a href="contact.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Contact Us</a></li>
+	<li><a href="assessment.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Assessment</a></li>
+	<li><a href="contact.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Contact Us</a></li>
     <li><a href="faq.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">FAQ</a></li>
     <li><a href="careers.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Careers</a></li>
 	<li><a href="supervision.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Supervision</a></li>
@@ -67,10 +68,6 @@
     <h2 class="text-3xl font-bold text-teal-700 mb-4">Our Services</h2>
     <p class="text-gray-600 max-w-3xl mx-auto mb-12">
       Therapy is not a one size fits all endeavor and is as unique as each individual who walks through our doors. It requires commitment of your time, resources, and energy. Our therapists are here to provide their support and compassion as you embark on this journey. 
-
-Making therapy accessible is important to us. We have in-person, virtual, and hybrid treatment options available.  
-
-Research consistently shows that outcomes of telehealth sessions are comparable to in-person sessions when evidenced based practices are used. This is important to consider when deciding what is the best fit for your needs. Telehealth does allow for flexibility in attendance and increases the frequency of some patients attending. If you have questions or concerns about how telehealth services work, please contact us, and we would be happy to discuss this service with you. As always, you are the expert on what will work for you.
     </p>
   </div>
 
@@ -110,7 +107,7 @@ Research consistently shows that outcomes of telehealth sessions are comparable 
 
     <!-- Assessments -->
     <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition">
-      <img src="images\AssessmentAdult.jpg" class="w-full h-48 object-cover" />
+      <img src="images\AssessmentAdult.JPG" class="w-full h-48 object-cover" />
       <div class="p-6 text-center">
         <h3 class="font-bold text-xl text-teal-700">Assessment & Evaluation</h3>
         <p class="text-gray-600 mt-2">
@@ -127,7 +124,7 @@ Research consistently shows that outcomes of telehealth sessions are comparable 
   <p>We combine expertise, innovation, and dedication to deliver top-notch results for our clients.</p>
 </section>
 
-	<!-- Floating Contact Us Sidebar -->
+<!-- Floating Contact Us Sidebar -->
 <a href="contact.html" class="contact-sidebar">
   Contact Us
 </a>
@@ -188,21 +185,50 @@ Research consistently shows that outcomes of telehealth sessions are comparable 
 }
 </style>
 
+<script>
+const scrollLink = document.getElementById("scrollTopLink");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY + window.innerHeight;
+  const triggerHeight = document.body.scrollHeight * 0.5;
+
+  if (scrollPosition >= triggerHeight) {
+    scrollLink.classList.add("show");
+  } else {
+    scrollLink.classList.remove("show");
+  }
+});
+
+scrollLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
 <!-- Footer -->
 <footer class="bg-gradient-to-r from-[#A9D6D9] to-[#C7EDE9] text-[#256D6A] py-10">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
     
     <!-- Company Info -->
-    <div>
-      <h3 class="text-xl font-semibold mb-3">Phoenix Therapy Services</h3>
-      <p>Rising to your potential.</p>
-	  <p>Follow us:</p>
-	    <div class="flex justify-center space-x-4 mt-4">
-        <a href="https://www.facebook.com/phoenixtherapyservices" target="_blank"><img src="images/facebook-icon.png" class="w-8 h-8"></a>
-        <a href="https://www.instagram.com/phoenixtherapy_services/" target="_blank"><img src="images/instagram-icon.png" class="w-8 h-8"></a>
-        <a href="https://www.linkedin.com/company/107252017/admin/dashboard/" target="_blank"><img src="images/linkedin-icon.png" class="w-8 h-8"></a>
-      </div>
-    </div>
+<div>
+  <h3 class="text-xl font-semibold mb-3">Phoenix Therapy Services</h3>
+  <p>Rising to your potential.</p>
+  <p class="mt-2">Follow us:</p>
+
+  <div class="flex justify-center md:justify-start space-x-4 mt-4">
+    <a href="https://www.facebook.com/phoenixtherapyservices" target="_blank">
+      <img src="images/facebook-icon.png" alt="Facebook" class="w-8 h-8">
+    </a>
+    <a href="https://www.instagram.com/phoenixtherapy_services/" target="_blank">
+      <img src="images/instagram-icon.png" alt="Instagram" class="w-8 h-8">
+    </a>
+    <a href="https://www.linkedin.com/company/107252017/admin/dashboard/" target="_blank">
+      <img src="images/linkedin-icon.png" alt="LinkedIn" class="w-8 h-8">
+    </a>
+  </div>
+</div>
+
     
     <!-- Contact Info -->
     <div>
