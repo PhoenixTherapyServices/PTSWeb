@@ -127,6 +127,66 @@ Research consistently shows that outcomes of telehealth sessions are comparable 
   <p>We combine expertise, innovation, and dedication to deliver top-notch results for our clients.</p>
 </section>
 
+	<!-- Floating Contact Us Sidebar -->
+<a href="contact.html" class="contact-sidebar">
+  Contact Us
+</a>
+
+<style>
+.contact-sidebar {
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  background-color: white;      /* White background */
+  color: teal;                 /* Teal text */
+  padding: 8px 10px;           /* Thinner box */
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid teal;
+  border-radius: 8px 0 0 0;     /* Rounded top-left corner */
+  writing-mode: vertical-rl;   /* Vertical text */
+  text-orientation: mixed;
+  transform: rotate(180deg);   /* Flips text direction (reads bottom-to-top) */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.contact-sidebar:hover {
+  background-color: teal;
+  color: white;
+}
+</style>
+
+
+<!-- Scroll to Top Text Link -->
+<a href="#" id="scrollTopLink">↑ Back to Top</a>
+
+<style>
+#scrollTopLink {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: teal;
+  text-decoration: none;
+  transition: opacity 0.4s ease;
+}
+
+#scrollTopLink.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#scrollTopLink:hover {
+  color: black; /* subtle hover change */
+}
+</style>
 
 <!-- Footer -->
 <footer class="bg-gradient-to-r from-[#A9D6D9] to-[#C7EDE9] text-[#256D6A] py-10">
