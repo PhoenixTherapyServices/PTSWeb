@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | PTS</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+.font-greatvibes {
+font-family: 'Great Vibes', cursive;
+}
+</style>
+
+  
 </head>
 
 <body class="bg-white text-gray-700">
@@ -45,36 +55,41 @@
 </nav>
 
 <!-- Image Slideshow -->
-
 <section class="relative w-full h-[250px] md:h-[500px] overflow-hidden md:rounded-xl">
-
-
-
   <div class="slideshow absolute inset-0 w-full h-full">
-    <img src="images\Couple.jpg" class="slide w-full h-full object-cover hidden" />
-    <img src="images\Family.jpg" class="slide w-full h-full object-cover hidden" />
-    <img src="images\Individual.jpg" class="slide w-full h-full object-cover hidden" />
+    <img src="images/Couple.jpg" class="slide w-full h-full object-cover hidden" />
+    <img src="images/Family.jpg" class="slide w-full h-full object-cover hidden" />
+    <img src="images/Individual.jpg" class="slide w-full h-full object-cover hidden" />
   </div>
-  <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-center text-white">
-<h1 class="text-3xl md:text-5xl font-bold mb-2"> </h1>
-<h2 class="text-lg md:text-5xl">Welcome to</h2>
-<p> &nbsp </p>
-<h1 class="text-5xl md:text-7xl font-bold mb-2">Phoenix Therapy Services</h1>
+
+  <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-center text-white px-4">
+    <h2 class="text-base md:text-2xl leading-tight md:leading-snug">Welcome to</h2>
+
+<h1 class="font-greatvibes text-4xl md:text-7xl mb-2 leading-tight md:leading-snug text-white">
+Phoenix Therapy Services
+</h1>
+
 
 
   </div>
 </section>
 
 <!-- Services Section -->
-<section class="py-20 px-6 bg-gray-50">
-  <div class="max-w-5xl mx-auto text-center">
-    <h3 class="text-3xl font-bold text-teal-700 mb-4">Our group of therapists and counselors are ready to guide and help you on your path to healing and growth. </h2>
-	<p> &nbsp </p>
-	<h3 class="text-3xl font-bold text-teal-700 mb-4">Whether that be discovering new ways to cope or expanding on what you have already accomplished, we’re here to help get you there. </h2>
-    <p class="text-gray-600 max-w-3xl mx-auto mb-12">
+<section class="py-12 md:py-20 px-6 bg-gray-50">
+  <div class="max-w-5xl mx-auto text-center space-y-4 md:space-y-6">
+    <h3 class="text-lg md:text-3xl font-bold text-teal-700 leading-snug">
+      Our group of therapists and counselors are ready to guide and help you on your path to healing and growth.
+    </h3>
 
-    </p>
+    <h3 class="text-lg md:text-3xl font-bold text-teal-700 leading-snug">
+      Whether that be discovering new ways to cope or expanding on what you have already accomplished, we’re here to help get you there.
+    </h3>
+
+    <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed"></p>
   </div>
+</section>
+
+
 
   <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
     <!-- Individual Therapy -->
@@ -116,44 +131,93 @@
       <div class="p-6 text-center">
         <h3 class="font-bold text-xl text-teal-700">Assessment & Evaluation</h3>
         <p class="text-gray-600 mt-2">
-          Comprehensive psychological assessments for mental health, trauma, ADHD, autism, and academic purposes.
+          Full evaluations for mental health concerns, trauma, and disordered eating. Comprehensive psychological testing for ADHD. 
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Floating Contact Us Sidebar -->
-<a href="contact.html" class="contact-sidebar">
-  Contact Us
-</a>
+<!-- Floating Contact Us Button with Logo -->
+<div class="contact-container">
+  <img src="images/safe.png" alt="SafeWithMe" class="contact-logo">
+  <a href="contact.html" class="contact-fab">
+    Contact Us
+  </a>
+</div>
 
 <style>
-.contact-sidebar {
+.contact-container {
   position: fixed;
-  bottom: 100px;
-  right: 0;
-  background-color: white;      /* White background */
-  color: teal;                 /* Teal text */
-  padding: 8px 10px;           /* Thinner box */
+  bottom: 60px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+}
+
+.contact-logo {
+  width: 100px;   /* adjust size as needed */
+  height: 100px;
+  margin-bottom: 6px;
+}
+
+.contact-fab {
+  background-color: white;
+  color: teal;
+  padding: 12px 18px;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   border: 2px solid teal;
-  border-radius: 8px 0 0 0;     /* Rounded top-left corner */
-  writing-mode: vertical-rl;   /* Vertical text */
-  text-orientation: mixed;
-  transform: rotate(180deg);   /* Flips text direction (reads bottom-to-top) */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.contact-fab:hover {
+  background-color: teal;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .contact-logo {
+    display: none;
+  }
+}
+
+</style>
+
+<!-- Floating Contact Us Button 
+
+<a href="contact.html" class="contact-fab">
+  Contact Us
+</a>
+
+<style>
+.contact-fab {
+  position: fixed;
+  bottom: 60px;       /* lift it above bottom */
+  right: 20px;        /* a little away from edge */
+  background-color: white;
+  color: teal;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid teal;
+  border-radius: 30px; /* pill-shaped button */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   transition: all 0.3s ease;
   z-index: 9999;
 }
 
-.contact-sidebar:hover {
+.contact-fab:hover {
   background-color: teal;
   color: white;
 }
-</style>
+</style> -->
 
 
 <!-- Scroll to Top Text Link -->
@@ -224,6 +288,8 @@ scrollLink.addEventListener("click", (e) => {
     </a>
     <a href="https://www.linkedin.com/company/107252017/admin/dashboard/" target="_blank">
       <img src="images/linkedin-icon.png" alt="LinkedIn" class="w-8 h-8">
+	<a href="https://www.linkedin.com/company/107252017/admin/dashboard/" target="_blank">
+
     </a>
   </div>
 </div>
