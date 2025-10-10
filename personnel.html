@@ -3,33 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | PTS</title>
+  <title>Our Team | PTS</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-white text-gray-700">
 
-  
-<nav class="bg-gradient-to-r from-[#A9D6D9] to-[#C7EDE9] text-[#256D6A] px-6 py-4 flex justify-between items-center relative shadow-md">
-  <!-- Replace text with logo -->
+<nav class="bg-gradient-to-r from-[#C7EDE9] to-[#C7EDE9] text-[#256D6A] px-6 py-4 flex justify-between items-center relative shadow-md">
+  <!-- Logo -->
   <a href="index.html" class="flex items-center space-x-2">
-    <img src="images/logo.png" alt="Phoenix Therapy Services Logo" class="h-10 w-auto">
+    <img src="images\logo.png" alt="Phoenix Therapy Services Logo" class="h-14 w-auto">
   </a>
 
+  <!-- Mobile menu button -->
   <button id="menu-btn" class="md:hidden flex flex-col space-y-1 focus:outline-none">
     <span class="w-6 h-0.5 bg-white"></span>
     <span class="w-6 h-0.5 bg-white"></span>
     <span class="w-6 h-0.5 bg-white"></span>
   </button>
 
-<ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 absolute md:static bg-gradient-to-r from-[#A9D6D9] to-[#C7EDE9] top-full left-0 w-full md:w-auto p-6 md:p-0 z-50 shadow-xl rounded-b-xl transition-all duration-300 ease-in-out">
-  <li><a href="index.html" class="block py-2 text-[#256D6A] hover:underline">Home</a></li>
-  <li><a href="about.html" class="block py-2 text-[#256D6A] hover:underline">About Us</a></li>
-  <li><a href="personnel.html" class="block py-2 text-[#256D6A] hover:underline">Personnel</a></li>
-  <li><a href="services.html" class="block py-2 text-[#256D6A] hover:underline">Services</a></li>
-  <li><a href="contact.html" class="block py-2 text-[#256D6A] hover:underline">Contact Us</a></li>
-  <li><a href="faq.html" class="block py-2 text-[#256D6A] hover:underline">FAQ</a></li>
-  <li><a href="careers.html" class="block py-2 text-[#256D6A] hover:underline">Careers</a></li>
-</ul>
+  <!-- Menu -->
+  <ul id="menu" 
+      class="hidden md:flex flex-col md:flex-row md:space-x-6 
+             absolute md:static 
+             top-full left-0 w-full md:w-auto 
+             bg-gradient-to-r from-[#C7EDE9] to-[#C7EDE9] md:bg-transparent 
+             p-6 md:p-0 
+             shadow-xl md:shadow-none 
+             rounded-b-xl md:rounded-none 
+             z-50 transition-all duration-300 ease-in-out">
+    <li><a href="index.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Home</a></li>
+    <li><a href="about.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">About Us</a></li>
+    <li><a href="personnel.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Our Team</a></li>
+    <li><a href="services.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Services</a></li>
+    <li><a href="assessment.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Assessment</a></li>
+	<li><a href="contact.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Contact Us</a></li>
+    <li><a href="faq.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">FAQ</a></li>
+    <li><a href="careers.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Careers</a></li>
+	<li><a href="supervision.html" class="block py-2 md:py-0 text-[#256D6A] hover:underline">Supervision</a></li>
+  </ul>
 </nav>
 
 <!-- Team -->
@@ -37,91 +49,293 @@
   <div class="container mx-auto max-w-7xl">
     <h2 class="text-3xl font-semibold mb-12 text-teal-900 text-center">Our Team</h2>
 
-    <!-- Team Member 1 -->
-    <div class="flex flex-col lg:flex-row items-center bg-white p-6 rounded shadow mb-10">
-      <img src="images/Catherine.jpg" alt="Catherine Howe" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:mr-8 flex-shrink-0">
-      <div>
-	
-        <h3 class="text-xl font-bold mb-2">Catherine Howe MSW, LMSW</h3>
-        <p class="text-sm text-gray-600 mb-3">Chief Executive Officer, Therapist</p>
-        <p class="text-sm text-gray-700">My goal as a therapist is to help guide people of all ages through their current life experiences. I utilize a strength-based approach, designed to bring my client's strengths to the forefront while encouraging development and processing the more difficult experiences, and feelings, impacting them.</p>
-		<p class="text-sm text-gray-700">I find success utilizing a trauma informed, relational approach. I work exceptionally well with those suffering from depression, anxiety, trauma, maladaptive behaviors, and those who don’t really know what’s wrong, but want to figure it out. Therapy can be intimidating to begin! Let’s address it, and build long term coping skills along the way.</p>
-		<p class="text-sm text-gray-700">I graduated from Michigan State University with a Master's Degree in Clinical Social Work and am licensed through the State of Michigan. Providing therapy since 2007 with children, adolescents, adults and families, I've also trained extensively in evidence-based practices emphasizing relationships, behaviors, and recovery from traumatic experiences.</p>
-		<p class="text-sm text-gray-700">My goal as a therapist is to help guide people of all ages through their current life experiences. I utilize a strength-based approach, designed to bring my client's strengths to the forefront while encouraging development and processing the more difficult experiences, and feelings, impacting them.</p>
-		
-<!-- Professional verification provided by Psychology Today -->
-<a href="https://www.psychologytoday.com/profile/1301680" class="sx-verified-seal"></a>
-<script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" data-badge="16" data-id="1301680" data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xNi9wcm9maWxlLzEzMDE2ODA/Y2FsbGJhY2s9c3hjYWxsYmFjaw=="></script>
-<!-- End Verification -->
-      </div>
-    </div>
+<!-- Team Member 1 -->
+<div class="flex flex-col lg:flex-row items-center bg-white p-6 rounded shadow mb-10">
+  <img src="images\Catherine.jpg" alt="Catherine Howe" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:mr-8 flex-shrink-0">
+  <div class="text-justify leading-relaxed space-y-4">
+	  <h3 class="text-xl font-bold text-center lg:text-left">Catherine Howe MSW, LMSW</h3>
+      <p class="text-sm text-gray-600 text-center lg:text-left">Co-founder, Director, Therapist · <span class="italic text-teal-700">She/Her/Hers</span></p>
+      <p class="text-sm text-gray-700 text-center lg:text-left">My goal as a therapist is to help guide people of all ages through their current life experiences. I utilize a strength-based approach, designed to bring my client's strengths to the forefront while encouraging development and processing the more difficult experiences, and feelings, impacting them.</p>
+		<p class="text-sm text-gray-700 text-center lg:text-left">I find success utilizing a trauma informed, relational approach. I work exceptionally well with those suffering from depression, anxiety, trauma, maladaptive behaviors, and those who don’t really know what’s wrong, but want to figure it out. Therapy can be intimidating to begin! Let’s address it, and build long term coping skills along the way.</p>
+		<p class="text-sm text-gray-700 text-center lg:text-left">I graduated from Michigan State University with a Master's Degree in Clinical Social Work and am licensed through the State of Michigan. Providing therapy since 2007 with children, adolescents, adults and families, I've also trained extensively in evidence-based practices emphasizing relationships, behaviors, and recovery from traumatic experiences.</p>
+		<p class="text-sm text-gray-700 text-center lg:text-left">My goal as a therapist is to help guide people of all ages through their current life experiences. I utilize a strength-based approach, designed to bring my client's strengths to the forefront while encouraging development and processing the more difficult experiences, and feelings, impacting them.</p>
+<!-- Offerings -->
+<div class="flex flex-wrap justify-center lg:justify-start gap-1 pt-1">
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">In-Person</span>
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">Virtual</span>
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">Hybrid</span>
+</div>
 
-    <!-- Team Member 2 (image right, text left) -->
-    <div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 rounded shadow mb-10">
-       <img src="images/Martha.jpg" alt="Martha Poenaru" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:ml-8 flex-shrink-0">
-      <div>
-	    <h3 class="text-xl font-bold mb-2">Martha Poenaru MA, LLP</h3>
-        <p class="text-sm text-gray-600 mb-3">Chief Operating Officer, Therapist</p>
-        <p class="text-sm text-gray-700 mb-1">Life can feel overwhelming and complicated for many reasons. My goal is to create a safe and collaborative environment to help you to discover the ways that truly bring you the calm and contentment you are searching for.</p>
-        <p class="text-sm text-gray-700 mb-1">I strive to learn about you and your unique experiences so that I can better understand your needs and work together to develop the life you are working towards. I utilize an eclectic combination of evidenced based practices to gain real world and tangible progress.</p>
-        <p class="text-sm text-gray-700">My areas of interest include anxiety disorders, trauma, eating disorders, body image concerns, depression, stress, life transitions, and grief. I see children, adolescents, and adults. I feel honored to join people on their journey towards a more balanced and intentional way of living.</p>
-      </div>
-    </div>
 
-    <!-- Team Member 3 -->
-    <div class="flex flex-col lg:flex-row items-center bg-white p-6 rounded shadow mb-10">
-      <img src="images/Melanie.jpg" alt="Melanie Hooper" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:mr-8 flex-shrink-0">
-      <div>
-        <h3 class="text-xl font-bold mb-2">Melanie Hooper MSW, LMSW</h3>
-        <p class="text-sm text-gray-600 mb-3">Clinical Director Clinical Supervisor</p>
-        <p class="text-sm text-gray-700 mb-1">I am a licensed Clinical/Macro Master’s Social Worker (LMSW) practicing in Michigan. I have 25 years of clinical experience with a focus for the past 7 years as a clinical supervisor.</p>
-        <p class="text-sm text-gray-700 mb-1">I am clinically trained to work with children/adolescents, families and groups and I am TF-CBT certified through the state of Michigan.</p>
-        <p class="text-sm text-gray-700">I received a Master of Social Work from Wayne State University and have been practicing in Michigan in Community Mental Health, residential settings and in private practices throughout my career as a mental health clinician and administrator.</p>
-      </div>
-    </div>
+  </div>
+</div>
 
-    <!-- Team Member 4 (image right, text left) -->
-    <div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 rounded shadow mb-10">
-      <img src="images/Rebecca.jpg" alt="Rebecca Rodgers" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:ml-8 flex-shrink-0">
-      <div>
-        <h3 class="text-xl font-bold mb-2">Rebecca Rodgers MA, LPC</h3>
-        <p class="text-sm text-gray-600 mb-3">Therapist</p>
-        <p class="text-sm text-gray-700 mb-1">Taking care of your mental health is just as important as taking care of your physical health. If you are dealing with Anxiety, depression, problems with your relationships, issues at work, struggling to get motivated, low self-esteem and confidence, or maybe you just don’t feel “right” I would love to help you identify and work through whatever you are facing.</p>
-        <p class="text-sm text-gray-700 mb-1">I graduated from Oakland University with my master's in counseling. I am licensed in Michigan with over eleven years of professional experience working with children, teens, and adults.</p>
-        <p class="text-sm text-gray-700">I work with my clients to create an open and safe environment where thoughts and feelings can be shared and processed without judgment. Taking the first step to seeking a fulfilling and happier life takes courage. I am here to support you in that process as we work together to reach your goals and create a healthier you in mind and body.</p>
-      </div>
-    </div>
 
-    <!-- Team Member 5 -->
-    <div class="flex flex-col lg:flex-row items-center bg-white p-6 rounded shadow">
-      <img src="images/Emily.jpg" alt="Emily Lafayette" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:mr-8 flex-shrink-0">
-      <div>
-        <h3 class="text-xl font-bold mb-2">Emily Lafayette MSW, LMSW</h3>
-        <p class="text-sm text-gray-600 mb-3">Therapist</p>
-        <p class="text-sm text-gray-700">I am a licensed clinical social worker and have provided therapy to children, teens, and adults for the past five years. I received my Master’s in Social Work from the University of Michigan in 2020. My work is person-centered and strengths based, meaning we draw on tools and resiliency you have and build upon that. I typically utilize CBT, mindfulness, and attachment theory with clients. </p>
-<p class="text-sm text-gray-700">As a therapist, my goal is to offer a nonjudgmental space where you can feel safe and supported. If you are feeling anxious, depressed, or struggling with changes in life, I would love to provide you with the space you need to navigate these challenges.</p>
-      </div>
-    </div>
+<!-- Team Member 2 -->
+
+<div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 rounded shadow mb-10">
+  <img src="images\Martha.jpg" alt="Martha Poenaru" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:ml-8 flex-shrink-0">
+  <div class="text-justify leading-relaxed space-y-4">
+  	  <h3 class="text-xl font-bold text-center lg:text-left">Martha Poenaru MA, LLP</h3>
+      <p class="text-sm text-gray-600 text-center lg:text-left">Co-founder, Director, Therapist · <span class="italic text-teal-700">She/Her/Hers</span></p>
+		<p class="text-sm text-gray-700 text-center lg:text-left">Life can feel overwhelming and complicated for many reasons. My goal is to create a safe and collaborative environment to help you to discover the ways that truly bring you the calm and contentment you are searching for.</p>
+        <p class="text-sm text-gray-700 text-center lg:text-left">I strive to learn about you and your unique experiences so that I can better understand your needs and work together to develop the life you are working towards. I utilize an eclectic combination of evidenced based practices to gain real world and tangible progress.</p>
+        <p class="text-sm text-gray-700 text-center lg:text-left">My areas of interest include anxiety disorders, trauma, eating disorders, body image concerns, depression, stress, life transitions, and grief. I see children, adolescents, and adults. I feel honored to join people on their journey towards a more balanced and intentional way of living.</p>
+<!-- Offerings -->
+<div class="flex flex-wrap justify-center lg:justify-start gap-1 pt-1">
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">In-Person</span>
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">Virtual</span>
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">Hybrid</span>
+</div>
+
+  </div>
+</div>
+
+<!-- Team Member 3 -->
+
+<div class="flex flex-col lg:flex-row items-center bg-white p-6 rounded shadow mb-10">
+  <img src="images\Melanie_Edited.jpg" alt="Melanie Hooper" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:mr-8 flex-shrink-0">
+  <div class="text-justify leading-relaxed space-y-4">
+  	  <h3 class="text-xl font-bold text-center lg:text-left">Melanie Hooper MSW, LMSW</h3>
+      <p class="text-sm text-gray-600 text-center lg:text-left">Co-founder, Clinical Director · <span class="italic text-teal-700">She/Her/Hers</span></p>
+        <p class="text-sm text-gray-700 text-center lg:text-left">I am a licensed Clinical/Macro Master’s Social Worker (LMSW) practicing in Michigan. I have 25 years of clinical experience with a focus for the past 7 years as a clinical supervisor.</p>
+        <p class="text-sm text-gray-700 text-center lg:text-left">I am clinically trained to work with children/adolescents, families and groups and I am TF-CBT certified through the state of Michigan.</p>
+        <p class="text-sm text-gray-700 text-center lg:text-left">I received a Master of Social Work from Wayne State University and have been practicing in Michigan in Community Mental Health, residential settings and in private practices throughout my career as a mental health clinician and administrator.</p>
+  <!-- Offerings -->
+<div class="flex flex-wrap justify-center lg:justify-start gap-1 pt-1">
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">Virtual Supervision</span>
+</div>
+
+  </div>
+</div>
+
+<!-- Team Member 4 -->
+<div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 rounded shadow mb-10">
+  <img src="images\Rebecca.jpg" alt="Rebecca Rodgers" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:ml-8 flex-shrink-0">
+  <div class="text-justify leading-relaxed space-y-4">
+      	  <h3 class="text-xl font-bold text-center lg:text-left">Rebecca Rodgers MA, LPC</h3>
+      <p class="text-sm text-gray-600 text-center lg:text-left">Therapist · <span class="italic text-teal-700">She/Her/Hers</span></p>
+        <p class="text-sm text-gray-700 text-center lg:text-left">Taking care of your mental health is just as important as taking care of your physical health. If you are dealing with Anxiety, depression, problems with your relationships, issues at work, struggling to get motivated, low self-esteem and confidence, or maybe you just don’t feel “right” I would love to help you identify and work through whatever you are facing.</p>
+        <p class="text-sm text-gray-700 text-center lg:text-left">I graduated from Oakland University with my master's in counseling. I am licensed in Michigan with over eleven years of professional experience working with children, teens, and adults.</p>
+        <p class="text-sm text-gray-700 text-center lg:text-left">I work with my clients to create an open and safe environment where thoughts and feelings can be shared and processed without judgment. Taking the first step to seeking a fulfilling and happier life takes courage. I am here to support you in that process as we work together to reach your goals and create a healthier you in mind and body.</p>
+  <div class="flex flex-wrap justify-center lg:justify-start gap-1 pt-1">
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">Virtual</span>
+</div>
+  </div>
+</div>
+
+<!-- Team Member 5 -->
+<div class="flex flex-col lg:flex-row items-center bg-white p-6 rounded shadow mb-10">
+  <img src="images\Emily.jpg" alt="Emily Lafayette" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:mr-8 flex-shrink-0">
+  <div class="text-justify leading-relaxed space-y-4">
+  <h3 class="text-xl font-bold text-center lg:text-left">Emily Lafayette MSW, LMSW</h3>
+      <p class="text-sm text-gray-600 text-center lg:text-left">Therapist · <span class="italic text-teal-700">She/Her/Hers</span></p>
+    <p class="text-sm text-gray-700 text-center lg:text-left">I am a licensed clinical social worker and have provided therapy to children, teens, and adults for the past five years. I received my Master’s in Social Work from the University of Michigan in 2020. My work is person-centered and strengths based, meaning we draw on tools and resiliency you have and build upon that. I typically utilize CBT, mindfulness, and attachment theory with clients.</p>
+    <p class="text-sm text-gray-700 text-center lg:text-left">As a therapist, my goal is to offer a nonjudgmental space where you can feel safe and supported. If you are feeling anxious, depressed, or struggling with changes in life, I would love to provide you with the space you need to navigate these challenges.</p>
+	<div class="flex flex-wrap justify-center lg:justify-start gap-1 pt-1">
+  <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600 rounded-full">Virtual</span>
+</div>
+  </div>
+</div>
+
+<!-- Team Member 8 -->
+<div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 rounded shadow mb-10">
+  <img src="images\Mary.jpg" alt="MC Acosta Benatero" class="w-40 h-40 rounded-full object-cover mb-4 lg:mb-0 lg:ml-8 flex-shrink-0">
+  <div class="text-justify leading-relaxed space-y-4">
+    <h3 class="text-xl font-bold text-center lg:text-left">MC Acosta Benatero</h3>
+      <p class="text-sm text-gray-600 text-center lg:text-left">Social Media Manager · <span class="italic text-teal-700">She/Her/Hers</span></p>
+    <p class="text-sm text-gray-700 text-center lg:text-left">I am passionate about creating inclusive, accessible online spaces. I work closely with therapists and care teams to support their digital presence, from designing cohesive content layouts to setting up posting schedules that reflect clarity and compassion.</p>
+  </div>
+  </div>
+
+<!-- Team Members with Shared Description to the Right -->
+<div class="flex flex-col lg:flex-row bg-white p-6 rounded shadow mb-10 items-start space-y-6 lg:space-y-0 lg:space-x-12">
+
+  <!-- Images Side by Side on the Left -->
+  <div class="flex space-x-4">
+    <img src="images\Kathy.jpg" alt="Kathy Showers" class="w-40 h-40 rounded-full object-top object-cover">
+    <img src="images\Angela.jpg" alt="Angela Boerkoel" class="w-40 h-40 rounded-full object-top object-cover">
+  </div>
+
+  <!-- Shared Description on the Right -->
+  <div class="text-justify leading-relaxed space-y-4">
+      <h3 class="text-xl font-bold text-center lg:text-left">Kathy Showers & Angela Boerkoel</h3>
+      <p class="text-sm text-gray-600 text-center lg:text-left">Billing Specialists · <span class="italic text-teal-700">She/Her/Hers</span></p>
+	  
+	 
+    <p class="text-sm text-gray-700 text-center lg:text-left">Our billers specialize in handling all aspects of patient billing from submitting insurance claims, managing payments, to ensuring HIPAA compliance. </p>
+    <p class="text-sm text-gray-700 text-center lg:text-left">The billers can be contacted at PTSoffice@phoenixtherapyservices.com. </p>
+  
+  </div>
+</div>
+<div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 rounded shadow mb-10">
+<!-- Verification Seal -->
+<div class="flex flex-wrap justify-center lg:justify-start gap-1 pt-1">
+  <a href="https://www.psychologytoday.com/profile/1301680" class="sx-verified-seal"></a>
+  <script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" data-badge="16" data-id="1301680" data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xNi9wcm9maWxlLzEzMDE2ODA/Y2FsbGJhY2s9c3hjYWxsYmFjaw=="></script>
+</div>
+  </div>
+  </div>
 
   </div>
 </section>
 
+
+
+
+
+<!-- Floating Contact Us Button 
+<a href="contact.html" class="contact-fab">
+  Contact Us
+</a>
+
+<style>
+.contact-fab {
+  position: fixed;
+  bottom: 60px;       /* lift it above bottom */
+  right: 20px;        /* a little away from edge */
+  background-color: white;
+  color: teal;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid teal;
+  border-radius: 30px; /* pill-shaped button */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.contact-fab:hover {
+  background-color: teal;
+  color: white;
+}
+</style> -->
+
+
+<!-- Scroll to Top Text Link -->
+<a href="#" id="scrollTopLink">↑ Back to Top</a>
+
+<style>
+#scrollTopLink {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: teal;
+  text-decoration: none;
+  transition: opacity 0.4s ease;
+}
+
+#scrollTopLink.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#scrollTopLink:hover {
+  color: black; /* subtle hover change */
+}
+</style>
+
+<script>
+const scrollLink = document.getElementById("scrollTopLink");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY + window.innerHeight;
+  const triggerHeight = document.body.scrollHeight * 0.5;
+
+  if (scrollPosition >= triggerHeight) {
+    scrollLink.classList.add("show");
+  } else {
+    scrollLink.classList.remove("show");
+  }
+});
+
+scrollLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+<!-- Floating Contact Us Button with Logo -->
+<div class="contact-container">
+  <img src="images\safe.png" alt="SafeWithMe" class="contact-logo">
+  <a href="contact.html" class="contact-fab">
+    Contact Us
+  </a>
+</div>
+
+<style>
+.contact-container {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+}
+
+.contact-logo {
+  width: 100px;   /* adjust size as needed */
+  height: 100px;
+  margin-bottom: 6px;
+}
+
+.contact-fab {
+  background-color: white;
+  color: teal;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid teal;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.contact-fab:hover {
+  background-color: teal;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .contact-logo {
+    display: none;
+  }
+}
+
+</style>
   
 <!-- Footer -->
 <footer class="bg-gradient-to-r from-[#A9D6D9] to-[#C7EDE9] text-[#256D6A] py-10">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
     
     <!-- Company Info -->
-    <div>
-      <h3 class="text-xl font-semibold mb-3">Phoenix Therapy Services</h3>
-      <p>Rising to your potential.</p>
-	  <p>Follow us:</p>
-	    <div class="flex justify-center space-x-4 mt-4">
-        <a href="https://www.facebook.com/phoenixtherapyservices" target="_blank"><img src="images/facebook-icon.png" class="w-8 h-8"></a>
-        <a href="https://www.instagram.com/phoenixtherapy_services/" target="_blank"><img src="images/instagram-icon.png" class="w-8 h-8"></a>
-        <a href="https://www.linkedin.com/company/107252017/admin/dashboard/" target="_blank"><img src="images/linkedin-icon.png" class="w-8 h-8"></a>
-      </div>
-    </div>
+<div>
+  <h3 class="text-xl font-semibold mb-3">Phoenix Therapy Services</h3>
+  <p>Rising to your potential.</p>
+  <p class="mt-2">Follow us:</p>
+
+  <div class="flex justify-center md:justify-start space-x-4 mt-4">
+    <a href="https://www.facebook.com/phoenixtherapyservices" target="_blank">
+      <img src="images\facebook-icon.png" alt="Facebook" class="w-8 h-8">
+    </a>
+    <a href="https://www.instagram.com/phoenixtherapy_services/" target="_blank">
+      <img src="images\instagram-icon.png" alt="Instagram" class="w-8 h-8">
+    </a>
+    <a href="https://www.linkedin.com/company/107252017/admin/dashboard/" target="_blank">
+      <img src="images\linkedin-icon.png" alt="LinkedIn" class="w-8 h-8">
+    </a>
+  </div>
+</div>
+
     
     <!-- Contact Info -->
     <div>
